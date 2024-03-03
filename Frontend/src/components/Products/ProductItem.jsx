@@ -1,13 +1,12 @@
 import PropTypes from "prop-types";
 import "./ProductItem.css";
+import { useContext } from "react";
+import { CartContext } from "../../context/CartProvider";
 
-const ProductItem = ({ productItem, setCartItems}) => {
+const ProductItem = ({ productItem }) => {
+  const { cartItems, addToCart } = useContext(CartContext);
 
-  const addToCart = (cartItem) => {
-    // setCartItems([...cartItems, cartItem])
-    setCartItems((prevCart) => [...prevCart, cartItem])
-  };
-
+  const filteredCart = cartItems.find((cartItem) => cartItem.id === productItem.id)
 
   return (
     <div className="product-item glide__slide glide__slide--active">
@@ -19,6 +18,7 @@ const ProductItem = ({ productItem, setCartItems}) => {
       </div>
       <div className="product-info">
         <a href="$" className="product-title">
+          {name}
           {productItem.name}
         </a>
         <ul className="product-star">
@@ -51,6 +51,7 @@ const ProductItem = ({ productItem, setCartItems}) => {
           <button
             className="add-to-cart"
             onClick={() => addToCart(productItem)}
+            disabled={filteredCart}
           >
             <i className="bi bi-basket-fill" />
           </button>
@@ -74,5 +75,5 @@ export default ProductItem;
 ProductItem.propTypes = {
   productItem: PropTypes.object,
   setCartItems: PropTypes.func,
-  cartItems: PropTypes.array
+  cartItems: PropTypes.array,
 };
