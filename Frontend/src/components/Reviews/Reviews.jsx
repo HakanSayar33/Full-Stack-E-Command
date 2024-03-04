@@ -14,12 +14,10 @@ const Reviews = ({active}) => {
           <ReviewItem />
         </ol>
       </div>
-      {/* comment form start */}
       <div className="review-form-wrapper">
         <h2>Add a review</h2>
         <ReviewForm />
       </div>
-      {/* comment form end */}
     </div>
   );
 };

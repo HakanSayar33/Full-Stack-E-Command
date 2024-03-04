@@ -23,7 +23,7 @@ const Search = ({ isSearchShow, setIsSearchShow }) => {
           <div className="results">
             <a href="#" className="result-item">
               <img
-                src="img/products/product1/1.png"
+                src="/img/products/product1/1.png"
                 className="search-thumb"
                 alt=""
               />

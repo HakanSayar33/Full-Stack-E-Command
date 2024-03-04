@@ -9,20 +9,14 @@ const ProductDetails = () => {
     <section className="single-product">
   <div className="container">
     <div className="single-product-wrapper">
-      {/* breadcrumb start */}
         <Breadcrumb/>
-      {/* breadcrumb end */}
-      {/* site main start */}
       <div className="single-content">
         <main className="site-main">
           <Gallery/>
           <Info/>
         </main>
       </div>
-      {/* site main end */}
-      {/* tabs start */}
       <Tabs/>
-      {/* tabs end */}
     </div>
   </div>
 </section>
