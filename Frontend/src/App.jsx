@@ -9,6 +9,7 @@ import AuthPage from "./pages/AuthPage";
 import CartPage from "./pages/CartPage";
 import ContactPage from "./pages/ContactPage";
 import "./App.css";
+import AdminUserPage from "./pages/admin/AdminUserPage";
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
       <Route path="/auth" element={<AuthPage />} />
       <Route path="/product/:id" element={<ProductDetailsPage />} />
       <Route path="/blog/:id" element={<BlogDetailsPage />} />
+      <Route path="/admin/*">
+        <Route path="users" element={<AdminUserPage />} />
+      </Route>
     </Routes>
   );
 }
