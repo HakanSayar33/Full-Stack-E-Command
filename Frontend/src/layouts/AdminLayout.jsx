@@ -184,3 +184,9 @@ export default AdminLayout;
 AdminLayout.propTypes = {
   children: PropTypes.node,
 };
+
+export default AdminLayout;
+
+AdminLayout.propTypes = {
+  children: PropTypes.node,
+};

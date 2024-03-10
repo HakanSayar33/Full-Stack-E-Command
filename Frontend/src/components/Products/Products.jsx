@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import ProductItem from "./ProductItem";
 import Slider from "react-slick";
 import PropTypes from "prop-types";

@@ -41,8 +41,8 @@ const Info = ({ singleProduct }) => {
         <span>2 reviews</span>
       </div>
       <div className="product-price">
-        <s className="old-price">${originalPrice.toFixed(2)}</s>
-        <strong className="new-price">${discountedPrice.toFixed(2)}</strong>
+        <s className="old-price">$165</s>
+        <strong className="new-price">$100</strong>
       </div>
       <div
         className="product-description"
@@ -79,25 +79,11 @@ const Info = ({ singleProduct }) => {
             </div>
           </div>
           <div className="cart-button">
-            <input
-              type="number"
-              defaultValue="1"
-              min="1"
-              id="quantity"
-              ref={quantityRef}
-            />
+            <input type="number" defaultValue={1} min={1} id="quantity" />
             <button
               className="btn btn-lg btn-primary"
               id="add-to-cart"
               type="button"
-              disabled={filteredCard}
-              onClick={() =>
-                addToCart({
-                  ...singleProduct,
-                  price: discountedPrice,
-                  quantity: parseInt(quantityRef.current.value),
-                })
-              }
             >
               Add to cart
             </button>
@@ -138,6 +124,10 @@ const Info = ({ singleProduct }) => {
 };
 
 export default Info;
+
+Info.propTypes = {
+  singleProduct: PropTypes.object,
+};
 
 Info.propTypes = {
   singleProduct: PropTypes.object,
