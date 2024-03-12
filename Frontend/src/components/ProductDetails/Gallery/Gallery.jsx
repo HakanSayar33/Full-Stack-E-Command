@@ -43,7 +43,7 @@ PrevBtn.propTypes = {
 
 const Gallery = ({ singleProduct }) => {
   const [activeImg, setActiveImg] = useState({
-    img: productsData[0].img.singleImage,
+    img: singleProduct.img[0],
     imgIndex: 0,
   });
 
