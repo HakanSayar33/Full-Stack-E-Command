@@ -20,7 +20,7 @@ Experience the convenience of a user-friendly admin panel designed to efficientl
 
 🚀 **Express.js and MongoDB:**
 Optimized for speed and capable of processing large datasets, I've chosen Express.js and MongoDB to ensure the development of fast and scalable applications.
-
+    
 💻 **React and Ant Design:**
 Elevate user satisfaction through aesthetically pleasing and user-friendly interfaces. By leveraging React and Ant Design, the project delivers a seamless and visually appealing experience.
 
@@ -32,12 +32,16 @@ Feel free to explore the powerful capabilities of this e-commerce solution, desi
 User information to access the admin panel   
 Username: admin@gmail.com   
 Password: hakan123   
-
+ 
 User information to access the user panel   
 Username: user@gmail.com  
 Password: user123  
 
 If you wish, you can register as a user.
+
+Coupons Code and Discount Rate    
+smart	% 20	  
+hakan	% 25   
 
 ![Home](https://i.hizliresim.com/io0zlor.gif "Home")  
 ![Pay](https://i.hizliresim.com/7uy7n34.gif "Pay")  
