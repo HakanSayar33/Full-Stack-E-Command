@@ -17,9 +17,12 @@ const ReviewForm = ({ singleProduct, setSingleProduct }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+<<<<<<< HEAD
     if (rating === 0) {
       return message.warning("Puan seçiniz!");
     }
+=======
+>>>>>>> fd840ffe4c34de270ed78426516a649e3482ed46
     const formData = {
       reviews: [
         ...singleProduct.reviews,
@@ -127,7 +130,10 @@ const ReviewForm = ({ singleProduct, setSingleProduct }) => {
           rows="10"
           onChange={(e) => setReview(e.target.value)}
           value={review}
+<<<<<<< HEAD
           required
+=======
+>>>>>>> fd840ffe4c34de270ed78426516a649e3482ed46
         ></textarea>
       </div>
       <div className="comment-form-cookies">

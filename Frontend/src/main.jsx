@@ -8,6 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "./index.css";
 import ScrollToTop from "./components/ScrollToTop";
 
+
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <ScrollToTop />

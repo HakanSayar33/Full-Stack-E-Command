@@ -1,7 +1,7 @@
 import { Button, Popconfirm, Table, message } from "antd";
 import { useCallback, useEffect, useState } from "react";
 
-const UserPage = () => {
+const AdminUserPage = () => {
   const [dataSource, setDataSource] = useState([]);
   const [loading, setLoading] = useState(false);
   const apiUrl = import.meta.env.VITE_API_BASE_URL;
@@ -51,11 +51,7 @@ const UserPage = () => {
           onConfirm={() => deleteUser(record.email)}
         >
           <Button type="primary" danger>
-<<<<<<< HEAD
-          Sil
-=======
             Delete
->>>>>>> fd840ffe4c34de270ed78426516a649e3482ed46
           </Button>
         </Popconfirm>
       ),
@@ -112,4 +108,4 @@ const UserPage = () => {
   );
 };
 
-export default UserPage;
+export default AdminUserPage;

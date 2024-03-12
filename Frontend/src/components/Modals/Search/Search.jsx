@@ -1,5 +1,8 @@
 import PropTypes from "prop-types";
+<<<<<<< HEAD
 import { Link } from "react-router-dom";
+=======
+>>>>>>> fd840ffe4c34de270ed78426516a649e3482ed46
 import { message } from "antd";
 import "./Search.css";
 import { useState } from "react";
@@ -39,6 +42,10 @@ const Search = ({ isSearchShow, setIsSearchShow }) => {
     }
   };
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> fd840ffe4c34de270ed78426516a649e3482ed46
   return (
     <div className={`modal-search ${isSearchShow ? "show" : ""} `}>
       <div className="modal-wrapper">
@@ -89,11 +96,15 @@ const Search = ({ isSearchShow, setIsSearchShow }) => {
             )}
             {searchResults?.length > 0 &&
               searchResults?.map((resultItem) => (
+<<<<<<< HEAD
                 <Link
                   to={`product/${resultItem._id}`}
                   className="result-item"
                   key={resultItem._id}
                 >
+=======
+                <a href="#" className="result-item" key={resultItem._id}>
+>>>>>>> fd840ffe4c34de270ed78426516a649e3482ed46
                   <img
                     src={resultItem.img[0]}
                     className="search-thumb"
@@ -106,7 +117,11 @@ const Search = ({ isSearchShow, setIsSearchShow }) => {
                       ${resultItem.price.current.toFixed(2)}
                     </span>
                   </div>
+<<<<<<< HEAD
                 </Link>
+=======
+                </a>
+>>>>>>> fd840ffe4c34de270ed78426516a649e3482ed46
               ))}
           </div>
         </div>
