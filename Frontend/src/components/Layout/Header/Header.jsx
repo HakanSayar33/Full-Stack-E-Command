@@ -6,7 +6,7 @@ import "./Header.css";
 
 const Header = ({ setIsSearchShow }) => {
   const { cartItems } = useContext(CartContext);
-
+  const user = localStorage.getItem("user");
   const { pathname } = useLocation();
 
   return (
@@ -28,7 +28,7 @@ const Header = ({ setIsSearchShow }) => {
             </div>
             <div className="header-left">
               <Link to={"/"} className="logo">
-                LOGO
+                <img src="https://freevector-images.s3.amazonaws.com/uploads/vector/preview/36682/36682.png" alt="" style={{height:90}}/>
               </Link>
             </div>
             <div className="header-center" id="sidebar">
@@ -221,9 +221,9 @@ const Header = ({ setIsSearchShow }) => {
                 >
                   <i className="bi bi-search"></i>
                 </button>
-                <a href="#">
+                {/* <a href="#">
                   <i className="bi bi-heart"></i>
-                </a>
+                </a> */}
                 <div className="header-cart">
                   <Link to={"/cart"} className="header-cart-link">
                     <i className="bi bi-bag"></i>
@@ -232,6 +232,19 @@ const Header = ({ setIsSearchShow }) => {
                     </span>
                   </Link>
                 </div>
+                {user && (
+                  <button
+                    className="search-button"
+                    onClick={() => {
+                      if(window.confirm("Çıkış yapmak istediğinize emin misiniz ?")){
+                        localStorage.removeItem("user")
+                        window.location.href = "/"
+                      }
+                    }}
+                  >
+                    <i className="bi bi-box-arrow-right"></i>
+                  </button>
+                )}
               </div>
             </div>
           </div>

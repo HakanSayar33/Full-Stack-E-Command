@@ -72,7 +72,7 @@ const Footer = () => {
               <div className="brand-info">
                 <div className="footer-logo">
                   <a href="index.html" className="logo">
-                    LOGO
+                  <img src="https://freevector-images.s3.amazonaws.com/uploads/vector/preview/36682/36682.png" alt="" style={{height:90}}/>
                   </a>
                 </div>
                 <div className="footer-desc">

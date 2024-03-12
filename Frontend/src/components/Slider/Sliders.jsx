@@ -16,9 +16,9 @@ const Sliders = () => {
   return (
     <section className="slider">
       <div className="slider-elements">
-        {currentSlide === 0 && <SliderItem imageSrc="img/slider/slider1.jpg" />}
-        {currentSlide === 1 && <SliderItem imageSrc="img/slider/slider2.jpg" />}
-        {currentSlide === 2 && <SliderItem imageSrc="img/slider/slider3.jpg" />}
+        {currentSlide === 0 && <SliderItem imageSrc="https://landingi.com/wp-content/uploads/2020/05/cover_ecommerce1.webp" />}
+        {currentSlide === 1 && <SliderItem imageSrc="https://helloyubo.com/wp-content/uploads/2022/10/creative_fashion-2-1024x372.jpg" />}
+        {currentSlide === 2 && <SliderItem imageSrc="https://images.ctfassets.net/tu2uwzoyozk8/5y3gwdU4C2n6nDsKXcrOYv/b78d2ccd17ba3206c15fefdc7be375b0/pexels-andrea-piacquadio-3769747.jpg" />}
         <div className="slider-buttons">
           <button onClick={prevSlide}>
             <i className="bi bi-chevron-left"></i>
