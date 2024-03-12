@@ -1,11 +1,7 @@
 import { useContext, useState } from "react";
 import { loadStripe } from "@stripe/stripe-js";
 import { CartContext } from "../../context/CartProvider";
-<<<<<<< HEAD
 import { Spin, message } from "antd";
-=======
-import { message } from "antd";
->>>>>>> fd840ffe4c34de270ed78426516a649e3482ed46
 
 const CartTotals = () => {
   const [fastCargoChecked, setFastCargoChecked] = useState(false);
@@ -34,10 +30,7 @@ const CartTotals = () => {
     : subTotals.toFixed(2);
 
   const handlePayment = async () => {
-<<<<<<< HEAD
     setLoading(true);
-=======
->>>>>>> fd840ffe4c34de270ed78426516a649e3482ed46
     if (!user) {
       return message.info("Ödeme yapabilmek için giriş yapmalısınız!");
     }
@@ -72,11 +65,8 @@ const CartTotals = () => {
       }
     } catch (error) {
       console.log(error);
-<<<<<<< HEAD
     } finally {
       setLoading(false);
-=======
->>>>>>> fd840ffe4c34de270ed78426516a649e3482ed46
     }
   };
 
@@ -121,17 +111,11 @@ const CartTotals = () => {
         </tbody>
       </table>
       <div className="checkout">
-<<<<<<< HEAD
       <Spin spinning={loading}>
           <button className="btn btn-lg" onClick={handlePayment}>
             Proceed to checkout
           </button>
         </Spin>
-=======
-        <button className="btn btn-lg" onClick={handlePayment}>
-          Proceed to checkout
-        </button>
->>>>>>> fd840ffe4c34de270ed78426516a649e3482ed46
       </div>
     </div>
   );

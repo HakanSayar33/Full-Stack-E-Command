@@ -21,17 +21,10 @@ const ProductItem = ({ productItem }) => {
   return (
     <div className="product-item glide__slide glide__slide--active">
       <div className="product-image">
-<<<<<<< HEAD
         <Link to={`product/${productItem._id}`} className="product-link">
           <img src={productItem.img[0]} alt="" className="img1 img" />
           <img src={productItem.img[1]} alt="" className="img2 img" />
         </Link>
-=======
-        <a href="#">
-          <img src={productItem.img[0]} alt="" className="img1" />
-          <img src={productItem.img[1]} alt="" className="img2" />
-        </a>
->>>>>>> fd840ffe4c34de270ed78426516a649e3482ed46
       </div>
       <div className="product-info">
         <a href="$" className="product-title">
@@ -92,8 +85,4 @@ export default ProductItem;
 ProductItem.propTypes = {
   productItem: PropTypes.object,
   setCartItems: PropTypes.func,
-<<<<<<< HEAD
 };
-=======
-};
->>>>>>> fd840ffe4c34de270ed78426516a649e3482ed46

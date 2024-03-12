@@ -51,11 +51,7 @@ const UserPage = () => {
           onConfirm={() => deleteUser(record.email)}
         >
           <Button type="primary" danger>
-<<<<<<< HEAD
           Sil
-=======
-            Delete
->>>>>>> fd840ffe4c34de270ed78426516a649e3482ed46
           </Button>
         </Popconfirm>
       ),
