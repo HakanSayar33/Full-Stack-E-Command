@@ -44,4 +44,5 @@ smart	% 20
 hakan	% 25   
 
 ![Home](https://i.hizliresim.com/io0zlor.gif "Home")  
-![Pay](https://i.hizliresim.com/7uy7n34.gif "Pay")  
+![Pay](https://i.hizliresim.com/7uy7n34.gif "Pay") 
+![Admin](https://i.hizliresim.com/3ldyv6i.gif "Admin") 
